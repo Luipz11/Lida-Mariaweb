@@ -1,0 +1,23 @@
+/* Error: Only 4 arguments allowed, but 5 were passed.
+ *   ,--> scss/page/_main-sanaconmigo.scss
+ * 2 |   @include grid(2, 300px, 20px, center, stretch);
+ *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> scss/utilities/_mixin.scss
+ * 8 |   @mixin grid($columns: auto, $gap: 0, $justify: start, $align: stretch) {
+ *   |          =============================================================== declaration
+ *   '
+ *   scss/page/_main-sanaconmigo.scss 2:3  grid()
+ *   scss/page/_main-sanaconmigo.scss 2:3  @import
+ *   scss/estilos.scss 11:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 4 arguments allowed, but 5 were passed.\a   \250c \2500 \2500 > scss/page/_main-sanaconmigo.scss\a 2 \2502    @include grid(2, 300px, 20px, center, stretch);\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > scss/utilities/_mixin.scss\a 8 \2502    @mixin grid($columns: auto, $gap: 0, $justify: start, $align: stretch) {\a   \2502           \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss/page/_main-sanaconmigo.scss 2:3  grid()\a   scss/page/_main-sanaconmigo.scss 2:3  @import\a   scss/estilos.scss 11:9                root stylesheet";
+}
